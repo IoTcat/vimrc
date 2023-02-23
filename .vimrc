@@ -41,6 +41,9 @@ let g:ale_sign_error = '✗'
 let g:ale_sign_warning = '⚡'
 let g:ale_statusline_format = ['✗ %d', '⚡ %d', '✔ OK']
 let g:rainbow_active = 1
+let g:rainbow_conf = {
+\  'ctermfgs': ['darkblue', 'darkyellow', 'darkgreen', 'darkred', 'darkcyan', 'darkmagenta']
+\}
 set showtabline=2
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#show_buffers = 0
@@ -49,7 +52,18 @@ let g:airline#extensions#tabline#show_buffers = 0
 "coc
 let g:coc_global_extensions = [
 	\ 'coc-json',
-	\ 'coc-vimlsp'
+	\ 'coc-toml',
+	\ 'coc-yaml',
+	\ 'coc-vimlsp',
+	\ 'coc-tsserver',
+	\ 'coc-go',
+	\ 'coc-java',
+	\ 'coc-lua',
+	\ 'coc-spell-checker',
+	\ 'coc-markdownlint',
+	\ 'coc-html',
+	\ 'coc-css',
+	\ 'coc-ltex'
 	\]
 
 " Use tab for trigger completion with characters ahead and navigate
